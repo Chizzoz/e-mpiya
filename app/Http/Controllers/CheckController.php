@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\Content;
-use App\models\ContentUserFavourite;
+use App\Models\Content;
+use App\Models\ContentUserFavourite;
 use DB;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Http\Request as Requested;

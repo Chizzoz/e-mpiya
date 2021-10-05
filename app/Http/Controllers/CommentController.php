@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\Comment;
-use App\models\Content;
+use App\Models\Comment;
+use App\Models\Content;
 use App\Models\User;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Http\Request as Requested;

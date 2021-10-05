@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Models\AccessPlatform;
-use App\models\ContentType;
+use App\Models\ContentType;
 use App\Models\EmpiyaAccount;
 use App\Models\EmpiyaAccountType;
 use App\Models\EmpiyaProvider;

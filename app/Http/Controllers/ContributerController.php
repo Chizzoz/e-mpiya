@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use DB;
 use Illuminate\Http\Request;
-use App\models\Content;
-use App\models\FactsContent;
-use App\models\Genre;
+use App\Models\Content;
+use App\Models\FactsContent;
+use App\Models\Genre;
 use App\Models\User;
 
 class ContributerController extends Controller

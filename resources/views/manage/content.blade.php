@@ -3,7 +3,7 @@
 	<div class="large-9 medium-9 small-12 column contents">
 		<?php
 			$content_count = count($contents);
-			$user_admin_access = App\models\UserAccess::whereUserRoleId(1)->whereUserId(Auth::user()->id)->orderBy('user_role_id', 'ASC')->first()
+			$user_admin_access = App\Models\UserAccess::whereUserRoleId(1)->whereUserId(Auth::user()->id)->orderBy('user_role_id', 'ASC')->first()
 		?>
 		@if ($content_count > 0)
 		<table class="stack hover">

@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\AccessPlatform;
-use App\models\Content;
-use App\models\ContentType;
-use App\models\CreativesContent;
+use App\Models\AccessPlatform;
+use App\Models\Content;
+use App\Models\ContentType;
+use App\Models\CreativesContent;
 use App\Models\EmpiyaAccount;
 use App\Models\EmpiyaAccountLimit;
 use App\Models\EmpiyaAccountType;
@@ -14,8 +14,8 @@ use App\Models\EmpiyaProvider;
 use App\Models\EmpiyaTransaction;
 use App\Models\EmpiyaTransactionHistory;
 use App\Models\EmpiyaTransactionType;
-use App\models\FactsContent;
-use App\models\UserMobile;
+use App\Models\FactsContent;
+use App\Models\UserMobile;
 use App\Models\User;
 use DB;
 use Illuminate\Http\Request;

@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\models\AccessPlatform;
-use App\models\ContentType;
+use App\Models\AccessPlatform;
+use App\Models\ContentType;
 use App\Models\EmpiyaAccount;
 use App\Models\EmpiyaProvider;
 use App\Models\EmpiyaTransaction;

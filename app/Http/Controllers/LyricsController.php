@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\AccessPlatform;
-use App\models\Content;
-use App\models\ContentType;
-use App\models\FactsContent;
-use App\models\Genre;
-use App\models\LyricsContent;
+use App\Models\AccessPlatform;
+use App\Models\Content;
+use App\Models\ContentType;
+use App\Models\FactsContent;
+use App\Models\Genre;
+use App\Models\LyricsContent;
 use App\Models\User;
 use DB;
 use Illuminate\Http\Request AS Requested;

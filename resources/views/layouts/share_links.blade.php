@@ -1,14 +1,14 @@
 <!-- Share Links -->
 <div class="social-share-links row medium-up-4">
 	<div class="one-ziko-check column">
-		<?php $checks = App\models\ContentUserFavourite::whereContentId($content->content_id)->count() ?>
+		<?php $checks = App\Models\ContentUserFavourite::whereContentId($content->content_id)->count() ?>
 		<div id="check-content-<?php echo $content->content_id; ?>">
 			<input type="hidden" id="checks-<?php echo $content->content_id; ?>" value="{{ $checks }}">
 			<?php
 			$user_checked = '';
 			if (!Auth::guest()) {
 				$user_id = Auth::user()->id;
-				$user_checked = App\models\ContentUserFavourite::whereContentId($content->content_id)->whereUserId($user_id)->count();
+				$user_checked = App\Models\ContentUserFavourite::whereContentId($content->content_id)->whereUserId($user_id)->count();
 			}
 			$str_check = "check";
 			if(!empty($user_checked)) {

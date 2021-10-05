@@ -97,7 +97,7 @@
 										}
 										?>" ><a href="{{ url('about') }}">About</a></li>
 								@else
-									<?php $user_admin_access = App\models\UserAccess::whereUserRoleId(1)->whereUserId(Auth::user()->id)->orderBy('user_role_id', 'ASC')->first() ?>
+									<?php $user_admin_access = App\Models\UserAccess::whereUserRoleId(1)->whereUserId(Auth::user()->id)->orderBy('user_role_id', 'ASC')->first() ?>
 									<li>
 										<a href="{{ route('view-user-profile', Auth::user()->username_slug) }}"><img src="<?php
 											if (!(Auth::user()->user_profile_picture == "")) {

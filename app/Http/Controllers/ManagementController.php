@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\Content;
-use App\models\ContentType;
-use App\models\UserAccess;
+use App\Models\Content;
+use App\Models\ContentType;
+use App\Models\UserAccess;
 use App\Models\User;
 use DB;
 use Illuminate\Http\Request;

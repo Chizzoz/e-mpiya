@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\models\Content;
+use App\Models\Content;
 use Illuminate\Http\Request;
 use Redirect;
 
