@@ -126,7 +126,7 @@ Route::post('/send/transaction/{transaction_type_slug}/provider/{provider_slug}'
 // e-Mpiya money transfer confirm
 Route::post('/money-transfer-confirm/transaction/{transaction_type_slug}/provider/{provider_slug}', [App\Http\Controllers\MtnController::class, 'moneyTransferConfirm'])->name('post-money-transfer-confirm');
 // Confirm e-Mpiya money transfer
-Route::get('/money-transfer-confirm/transaction/{transaction_type_slug}/provider/{provider_slug}/{user_empiya_account_type}/{mtn_money_number}/{deposit_amount}', [App\Http\Controllers\MtnController::class, 'requestPaymentConfirmGet'])->name('get-confirm-mtn-request-payment');
+// Route::get('/money-transfer-confirm/transaction/{transaction_type_slug}/provider/{provider_slug}/{user_empiya_account_type}/{mtn_money_number}/{deposit_amount}', [App\Http\Controllers\MtnController::class, 'requestPaymentConfirmGet'])->name('get-confirm-mtn-request-payment');
 // Request MTN Payment
 Route::get('/api/sms/deposit/{mobile_number}/{deposit_amount}', [App\Http\Controllers\MtnResponseController::class, 'requestPaymentViaSms'])->name('mtn-deposit-via-sms');
 
