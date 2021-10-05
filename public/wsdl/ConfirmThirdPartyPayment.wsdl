@@ -1,0 +1,28 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Header>
+		<ns1:NotifySOAPHeader xmlns:ns1="http://www.huawei.com.cn/schema/common/v2_1">
+			<ns1:traceUniqueID>504021505821207271704550002002</ns1:traceUniqueID>
+		</ns1:NotifySOAPHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ns2:processRequest xmlns:ns2="http://b2b.mobilemoney.mtn.zm_v1.0/">
+			<serviceId>100</serviceId>
+			<parameter>
+				<name>ProcessingNumber</name>
+				<value>1212121</value>
+			</parameter>
+			<parameter>
+				<name>senderID</name>
+				<value>MOM</value>
+			</parameter>
+			<parameter>
+				<name>AcctRef</name>
+				<value>112233</value>
+			</parameter>
+			<parameter>
+				<name>OpCoID</name>
+				<value>0</value>
+			</parameter>
+		</ns2:processRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
