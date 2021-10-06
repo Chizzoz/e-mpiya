@@ -38,7 +38,8 @@ Route::get('/', function () {
 	/* pass variables to view */
 	$data['heading'] = "Welcome to e-Mpiya OMPS";
 	
-	return view('home', $data)->nest('right_sidebar', 'layouts.right_sidebar', $data);
+	// return view('home', $data)->nest('right_sidebar', 'layouts.right_sidebar', $data);
+	return view('blank');
 });
 
 Auth::routes();
