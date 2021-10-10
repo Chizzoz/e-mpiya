@@ -15,7 +15,7 @@ class CreateEmpiyaAccountsTable extends Migration
         Schema::create('empiya_accounts', function (Blueprint $table) {
             $table->increments('id');
 			$table->integer('user_id')->unsigned();
-			$table->bigInteger('account_number');
+			$table->bigInteger('account_number')->nullable()->unique();
 			$table->integer('account_type_id')->unsigned();
             $table->timestamps();
 			$table->engine = 'InnoDB';

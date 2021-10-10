@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-class AddAccountNameToEmpiyaAccountsTable extends Migration
+class AddEmpiyaCurrencyIdToEmpiyaAccounts extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,8 @@ class AddAccountNameToEmpiyaAccountsTable extends Migration
     public function up()
     {
         Schema::table('empiya_accounts', function (Blueprint $table) {
-            $table->string('account_name')->after('empiya_account_type_id')->nullable();
+            $table->unsignedBigInteger('empiya_currency_id')->after('empiya_account_type_id');
+            $table->foreign('empiya_currency_id')->references('id')->on('empiya_currencies');
         });
     }
 

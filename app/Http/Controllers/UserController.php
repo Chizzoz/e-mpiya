@@ -56,12 +56,10 @@ class UserController extends Controller
 				$empiya_account = new EmpiyaAccount;
 				$empiya_account->user_id = $user->id;
 				// generate unique account number
-				$user_type = $user->user_type_id;
-				$user_id = $user->id;
-				$seq = 1234567890;
-				$currency = "01";
-				$empiya_account->account_number = $user_type . $user_id . substr($seq, 0, (strlen($seq) - strlen($user_id))) . $currency;
 				$empiya_account->empiya_account_type_id = $user->user_type_id;
+				$empiya_account->empiya_currency_id = 1;
+				$empiya_account->save();
+				$empiya_account->account_number = 1000000000 + $empiya_account->id;
 				$empiya_account->save();
 			}
 			// set default account limit
@@ -73,7 +71,7 @@ class UserController extends Controller
 					$account_limit->empiya_account_id = $user_empiya_account->id;
 				}
 				$account_limit->empiya_account_limit_type_id = 3;
-				$account_limit->account_limit = 1000.00;
+				$account_limit->account_limit = 10000.00;
 				$account_limit->save();
 			}
 			// Activate user
@@ -120,8 +118,10 @@ class UserController extends Controller
 			// create user e-Mpiya account
 			$empiya_account = new EmpiyaAccount;
 			$empiya_account->user_id = $user->id;
-			$empiya_account->account_number = 4110800250141; //TODO
 			$empiya_account->empiya_account_type_id = $user->user_type_id;
+			$empiya_account->empiya_currency_id = 1;
+			$empiya_account->save();
+			$empiya_account->account_number = 1000000000 + $empiya_account->id;
 			$empiya_account->save();
 			
 			// set default account limit
