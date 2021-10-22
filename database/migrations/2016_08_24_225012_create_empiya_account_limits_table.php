@@ -16,7 +16,7 @@ class CreateEmpiyaAccountLimitsTable extends Migration
             $table->increments('id');
 			$table->integer('account_id')->unsigned();
 			$table->integer('account_limit_type_id')->unsigned();
-			$table->float('account_limit');
+			$table->decimal('account_limit', 13, 4);
             $table->timestamps();
         });
 		

@@ -19,8 +19,8 @@ class CreateEmpiyaTransactionsTable extends Migration
 			$table->integer('related_transaction_id')->unsigned();
 			$table->integer('sender_id')->unsigned();
 			$table->integer('receiver_id')->unsigned();
-			$table->float('amount');
-			$table->float('transaction_fee')->default(0.00);
+			$table->decimal('amount', 13, 4);
+			$table->decimal('transaction_fee', 13, 4)->default(0.00);
 			$table->integer('transaction_type_id')->unsigned();
 			$table->string('description');
 			$table->integer('transaction_status_id')->unsigned();

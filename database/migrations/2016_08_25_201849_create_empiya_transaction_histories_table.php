@@ -17,8 +17,8 @@ class CreateEmpiyaTransactionHistoriesTable extends Migration
 			$table->integer('transaction_id')->unsigned();
 			$table->integer('user_id')->unsigned();
 			$table->boolean('is_debit');
-			$table->float('initial_balance');
-			$table->float('final_balance');
+			$table->decimal('initial_balance', 13, 4);
+			$table->decimal('final_balance', 13, 4);
             $table->timestamps();
 			$table->engine = 'InnoDB';
         });
